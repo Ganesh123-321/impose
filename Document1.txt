@@ -1,0 +1,177 @@
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Begins Infotech Logo">
+      </div>
+      <nav>
+        <ul>
+          <li style="font-size: 20px;"><a href="#">Home</a></li>
+          <li style="font-size: 20px;" ><a href="about.html">About </a></li>
+          <li style="font-size: 20px;"><a href="#">Services</a></li>
+          <li style="font-size: 20px;"><a href="#">Career</a></li>
+          <li style="font-size: 20px;"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<footer class="bi-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h2>Begins <span>Infotech</span></h2>
+                    <p>Building modern IT solutions with passion and precision. We deliver innovative HR solutions that transform businesses.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Park, Innovation Road, City - 560001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@beginsinfotech.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Services</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Career</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i> HR Solutions</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> IT Services</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Web Development</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Mobile Apps</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Digital Marketing</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Refund Policy</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Disclaimer</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <p>Get latest updates and offers</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    © Copyright 2025. Begins Infotech. All Rights Reserved.
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+======================================================================
+
+/* HEADER */
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #11235a;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+  font-size: 14px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c41e3a;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+<body class="bg-gray-100 text-gray-800 font-sans">
