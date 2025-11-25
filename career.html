@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="career.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container header">
+    <div class="logo">
+    <img src="images/logo.png" alt="Begins Infotech Logo">
+    </div>
+    <nav>
+    <ul>
+        <li style="font-size: 20px;"><a href="#">Home</a></li>
+        <li style="font-size: 20px;" ><a href="about.html">About </a></li>
+        <li style="font-size: 20px;"><a href="service.html">Services</a></li>
+        <li style="font-size: 20px;"><a href="career.html">Career</a></li>
+        <li style="font-size: 20px;"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+
+ <!-- Career Intro Section -->
+    <section class="career-intro">
+        <div class="container">
+            <h2 class="section-title">Why Work With Us?</h2>
+            <p class="intro-text">At HR Solutions, we believe our people are our greatest asset. We're committed to creating an environment where you can grow professionally, collaborate with talented colleagues, and make a real impact.</p>
+            
+            <div class="benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="benefit-title">Career Growth</h3>
+                    <p>Clear career paths and development opportunities to help you reach your professional goals.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="benefit-title">Collaborative Culture</h3>
+                    <p>Work with talented, supportive colleagues in an inclusive and diverse environment.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="benefit-title">Competitive Benefits</h3>
+                    <p>Comprehensive health, wellness, and financial benefits to support you and your family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Openings Section -->
+    <section class="job-openings" id="job-openings">
+        <div class="container">
+            <h2 class="section-title">Current Openings</h2>
+            <p class="intro-text">Explore our available positions and find the perfect fit for your skills and aspirations.</p>
+            
+            <div class="job-categories">
+                <button class="category-btn active" data-category="all">All Positions</button>
+                <button class="category-btn" data-category="it">IT & Technology</button>
+                <button class="category-btn" data-category="non-it">Non-IT</button>
+            </div>
+            
+            <div class="job-listings">
+                <!-- IT Jobs -->
+                <div class="job-card" data-category="it">
+                    <div class="job-header">
+                        <h3 class="job-title">Frontend Developer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">We're looking for a skilled Frontend Developer to join our product team and help build intuitive user interfaces for our HR platform.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">React</span>
+                            <span class="job-tag">JavaScript</span>
+                            <span class="job-tag">CSS3</span>
+                            <span class="job-tag">UI/UX</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="job-card" data-category="it">
+                    <div class="job-header">
+                        <h3 class="job-title">Data Scientist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">Join our data team to develop predictive models and analytics solutions that transform HR processes for our clients.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">Python</span>
+                            <span class="job-tag">Machine Learning</span>
+                            <span class="job-tag">SQL</span>
+                            <span class="job-tag">Statistics</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="job-card" data-category="it">
+                    <div class="job-header">
+                        <h3 class="job-title">DevOps Engineer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Austin, TX</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">Help us build and maintain our cloud infrastructure to ensure high availability and performance for our HR solutions platform.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">AWS</span>
+                            <span class="job-tag">Docker</span>
+                            <span class="job-tag">Kubernetes</span>
+                            <span class="job-tag">CI/CD</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Non-IT Jobs -->
+                <div class="job-card" data-category="non-it">
+                    <div class="job-header">
+                        <h3 class="job-title">HR Consultant</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Chicago, IL</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">Work directly with clients to implement our HR solutions and provide expert guidance on HR processes and best practices.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">Consulting</span>
+                            <span class="job-tag">HR Processes</span>
+                            <span class="job-tag">Client Relations</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="job-card" data-category="non-it">
+                    <div class="job-header">
+                        <h3 class="job-title">Marketing Specialist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">Develop and execute marketing campaigns to promote our HR solutions and engage with our target audience.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">Digital Marketing</span>
+                            <span class="job-tag">Content Creation</span>
+                            <span class="job-tag">SEO</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="job-card" data-category="non-it">
+                    <div class="job-header">
+                        <h3 class="job-title">Sales Representative</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Boston, MA</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-body">
+                        <p class="job-description">Join our sales team to help businesses discover how our HR solutions can transform their people management processes.</p>
+                        <div class="job-tags">
+                            <span class="job-tag">B2B Sales</span>
+                            <span class="job-tag">Relationship Building</span>
+                            <span class="job-tag">Solution Selling</span>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture">
+        <div class="container">
+            <h2 class="section-title">Our Culture</h2>
+            <p class="intro-text">We foster an environment where innovation thrives and every team member can make an impact.</p>
+            
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We encourage creative thinking and experimentation to solve complex HR challenges.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Cross-functional teams work together to deliver exceptional solutions to our clients.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wellbeing</h3>
+                    <p>We prioritize work-life balance and support the holistic wellbeing of our employees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+  
+<!-- Footer section -->
+<footer class="bi-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h2>Impose <span>HR Solutions</span></h2>
+                    <p>"IMPOSE HR Solutions: Your strategic placement partner, connecting exceptional talent with extraordinary opportunities."</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Park, Innovation Road, City - 560001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+9322608969 </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@imposehr.com </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="service.html"><i class="fas fa-chevron-right"></i> Services</a>
+                        <a href="career.html"><i class="fas fa-chevron-right"></i> Career</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i>  Automotive/Ancillaries </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> IT ( Information Technology )</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Finance & Banking t</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i>  Retails, Marketing & Sales </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Administration/Human Resource </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> ITES/BPO/KPO </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i>  Power/EPC/Construction/Real Estate  </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Healthcare/Pharmaceuticals/Hospital  </a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Travel/Tourism/Hospitality/Transportation </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Refund Policy</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Disclaimer</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <p>Get latest updates and offers</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    Created By Guru Software Solutions
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="career.js"></script>
+</body>
+</html>

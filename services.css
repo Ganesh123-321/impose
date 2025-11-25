@@ -1,0 +1,284 @@
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(-45deg, #1a2a6c, #2a3a7c, #3a4a8c, #4a5a9c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.services-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.section-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.tagline {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #f8f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.service-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.4), 
+        transparent);
+    transition: left 0.8s ease;
+    z-index: 2;
+}
+
+.service-card:hover::before {
+    left: 100%;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
+    z-index: 3;
+}
+
+.service-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.15),
+        0 15px 30px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-size: 2.2rem;
+    color: white;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.15) rotate(8deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.service-features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e9ecef;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-features li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+/* Industry-specific colors */
+.automotive .service-icon { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.it .service-icon { background: linear-gradient(135deg, #3498db, #2980b9); }
+.finance .service-icon { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+.retail .service-icon { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+.admin .service-icon { background: linear-gradient(135deg, #34495e, #2c3e50); }
+.ites .service-icon { background: linear-gradient(135deg, #1abc9c, #16a085); }
+.construction .service-icon { background: linear-gradient(135deg, #e67e22, #d35400); }
+.healthcare .service-icon { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.travel .service-icon { background: linear-gradient(135deg, #3498db, #2980b9); }
+
+/* Animation Classes */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.service-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+.service-card:nth-child(1) { animation-delay: 0s; }
+.service-card:nth-child(2) { animation-delay: 0.5s; }
+.service-card:nth-child(3) { animation-delay: 1s; }
+.service-card:nth-child(4) { animation-delay: 1.5s; }
+.service-card:nth-child(5) { animation-delay: 2s; }
+.service-card:nth-child(6) { animation-delay: 2.5s; }
+.service-card:nth-child(7) { animation-delay: 3s; }
+.service-card:nth-child(8) { animation-delay: 3.5s; }
+.service-card:nth-child(9) { animation-delay: 4s; }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .section-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section {
+        padding: 20px 10px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-8px) scale(1.01);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .section-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .service-card {
+        animation: none !important;
+    }
+}
